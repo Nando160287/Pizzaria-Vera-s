@@ -17,20 +17,25 @@
    
 
     function atualizarCarrinho() {
-      const listaCarrinho = document.getElementById('lista-carrinho');
-      const totalElement = document.getElementById('total');
-      listaCarrinho.innerHTML = '';
-      let total = 0;
+  const listaCarrinho = document.getElementById('lista-carrinho');
+  const totalElement = document.getElementById('total');
+  listaCarrinho.innerHTML = '';
+  let total = 0;
 
-      carrinho.forEach((item, index) => {
-        const li = document.createElement('li');
-        li.innerHTML = `${item.nome} x${item.quantidade} - R$ ${(item.preco * item.quantidade).toFixed(2)}
-          <button class="remove-btn" onclick="removerItem(${index})">Remover</button>`;
-        listaCarrinho.appendChild(li);
-        total += item.preco * item.quantidade;
-      });
+  carrinho.forEach((item, index) => {
+    const li = document.createElement('li');
+    li.innerHTML = `${item.nome} x${item.quantidade} - R$ ${(item.preco * item.quantidade).toFixed(2)}
+      <button class="remove-btn" onclick="removerItem(${index})">Remover</button>`;
+    listaCarrinho.appendChild(li);
+    total += item.preco * item.quantidade;
+  });
+
+  totalElement.textContent = `Total: R$ ${total.toFixed(2)}`;
+}
+
+
       
-    }
+    
 
     function finalizarPedido() {
       const nome = document.getElementById('nomeCliente').value.trim();
