@@ -29,9 +29,7 @@
         listaCarrinho.appendChild(li);
         total += item.preco * item.quantidade;
       });
-
-      const totalComDesconto = aplicarCupom(total);
-      totalElement.textContent = `Total: R$ ${totalComDesconto.toFixed(2)}`;
+      
     }
 
     function finalizarPedido() {
@@ -56,12 +54,8 @@
         mensagem += `• ${item.nome} x${item.quantidade} - R$ ${(item.preco * item.quantidade).toFixed(2)}\n`;
         total += item.preco * item.quantidade;
       });
-
-      const totalFinal = aplicarCupom(total);
-      mensagem += `\nTotal: R$ ${totalFinal.toFixed(2)}\n\n`;
-      mensagem += `🧍 Nome: ${nome}\n🏠 Endereço: ${endereco}\n💳 Pagamento: ${pagamento}`;
-
-      const numero = "5511999999999"; // Substitua pelo número real
+      
+      const numero = "5511999999999"; 
       const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`;
       window.open(url, '_blank');
     }
