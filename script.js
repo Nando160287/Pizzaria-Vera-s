@@ -36,31 +36,35 @@
 
       
     
+function finalizarCompra() {
+  const nome = document.getElementById('nomeCliente').value.trim();
+  const endereco = document.getElementById('enderecoCliente').value.trim();
+  const pagamento = document.getElementById('pagamentoCliente').value;
 
-    function finalizarPedido() {
-      const nome = document.getElementById('nomeCliente').value.trim();
-      const endereco = document.getElementById('enderecoCliente').value.trim();
-      const pagamento = document.getElementById('pagamentoCliente').value;
+  if (!nome || !endereco || !pagamento) {
+    alert("Por favor, preencha todos os campos.");
+    return;
+  }
 
-      if (!nome || !endereco) {
-        alert("Por favor, preencha todos os dados do cliente.");
-        return;
-      }
+  if (carrinho.length === 0) {
+    alert("Seu carrinho está vazio!");
+    return;
+  }
 
-      if (carrinho.length === 0) {
-        alert("Seu carrinho está vazio!");
-        return;
-      }
+  let mensagem = `Olá! Gostaria de fazer o seguinte pedido:\n\n`;
+  mensagem += `👤 Nome: ${nome}\n🏠 Endereço: ${endereco}\n💳 Pagamento: ${pagamento}\n\n🛒 Itens:\n`;
 
-      let mensagem = `Olá! Gostaria de fazer o seguinte pedido:\n\n`;
-      let total = 0;
+  let total = 0;
+  carrinho.forEach(item => {
+    mensagem += `• ${item.nome} x${item.quantidade} - R$ ${(item.preco * item.quantidade).toFixed(2)}\n`;
+    total += item.preco * item.quantidade;
+  });
 
-      carrinho.forEach(item => {
-        mensagem += `• ${item.nome} x${item.quantidade} - R$ ${(item.preco * item.quantidade).toFixed(2)}\n`;
-        total += item.preco * item.quantidade;
-      });
-      
-      const numero = "5511999999999"; 
-      const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`;
-      window.open(url, '_blank');
-    }
+  mensagem += `\n💰 Total: R$ ${total.toFixed(2)}`;
+
+  const numero = "5511 97082-9089"; // Substitua pelo número real
+  const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`;
+  window.open(url, '_blank');
+}
+
+
