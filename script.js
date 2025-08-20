@@ -62,7 +62,7 @@ function finalizarCompra() {
 
   mensagem += `\n💰 Total: R$ ${total.toFixed(2)}`;
 
-  const numero = "5511 97082-9089"; // Substitua pelo número real
+  const numero = "5511970829089"; // Substitua pelo número real
   const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`;
   window.open(url, '_blank');
 }
