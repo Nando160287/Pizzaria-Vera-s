@@ -12,25 +12,27 @@
     <h1>Pizzaria Vera's</h1>
     <header>
         <nav>
-            <ul class="menu">
-                <li><a href="#home">Home</li></a>
-                <li class="dropdow">
-                    <a href="#">Pizzas</a>
-                    <ul class="submenu">
-                        <a href="tradicionais">Tradicionais
-                </li></a>
-                <li><a href="#especiais"> Especiais</li></a>
-                <li><a href="#doces">Doces</li></a>
-                <li><a href="#bordas">Bordas</li></a>
-            </ul>
-            </li>            
+           <ul class="menu">
+            <li><a href="#home">Home</a></li>
+            <li class="dropdown">
+                <a href="#">Pizzas</a>
+                <ul class="submenu">
+                    <li><a href="#tradicionais">Tradicionais</a></li>
+                    <li><a href="#especiais">Especiais</a></li>
+                    <li><a href="#doces">Doces</a></li>
+                    <li><a href="#bordas">Bordas</a></li>
+                </ul>
+            </li>
+            <li><a href="#Esfihas">Esfihas</a></li>
+            <li><a href="#Esfihas-Doces">Esfihas Doces</a></li>
             <li><a href="#contato">Contato</a></li>
             <li><a href="#endereco">Endereço</a></li>
             <li><a href="#horario">Horário</a></li>
             <li><a href="#carrinho">Carrinho</a></li>
-            </ul>
-        </nav>
-    </header>
+        </ul>
+    </nav>
+</header>
+
 
     <main></main>
 
@@ -40,11 +42,20 @@
         <div class="pizza-card">
             <img src="./img/Pizza Alemã.jpg" alt="Pizza Alemã" class="pizza-alema">
             <p> Mussarela, Milho Verde, Cebola e Bacon</p>
-            <h3>Broto - R$30,00</h3>
-            <button onclick="AdicionarAoCarrinho('Pizza Broto Alemã' , 30)" class="">Adicionar ao Carrinho</button>
+            <h3>Broto - R$34,00</h3>
+            <button onclick="AdicionarAoCarrinho('Pizza Broto Alemã' , 34)" class="">Adicionar ao Carrinho</button>
             <div class="pizza-alema">
                 <h3>Pizza Grande - R$ 50,00</h3>
-                <button onclick="AdicionarAoCarrinho('Pizza Grande Alemã', 50)" class="">Adicionar ao Carrinho</button>
+              <section>
+        <h2>Esfiha Calabresa</h2>
+        <div class="esfiha-container">
+        <div class="esfiha-card">
+            <img src="./img/Esfiha Calabresa.jpeg" alt="Esfiha Calabresa" class="esfiha-calabresa">
+            <h3>R$2,00</h3>
+            <button onclick="AdicionarAoCarrinho('Esfiha Calabresa' , 2)" class="esfiha-calabresa">Adicionar ao Carrinho</button>
+            </div>
+        </div>
+    </section>
             </div>
             </div>
         </div>
@@ -56,8 +67,8 @@
             <div class="pizza-card">
             <img src="./img/Pizza Alho.jpeg" alt="Pizza de Alho" class="pizza-de-alho">
             <p> Mussarela e Alho Frito</p>
-            <h3>Broto - R$30,00</h3>
-            <button onclick="AdicionarAoCarrinho('Pizza Broto Alho' , 30)">Adicionar ao Carrinho</button>
+            <h3>Broto - R$34,00</h3>
+            <button onclick="AdicionarAoCarrinho('Pizza Broto Alho' , 34)">Adicionar ao Carrinho</button>
             <div class="pizza-alema">
                 <h3>Pizza Grande - R$ 43,00</h3>
                 <button onclick="AdicionarAoCarrinho('Pizza Grande Alho', 43)">Adicionar ao Carrinho</button>
@@ -72,8 +83,8 @@
         <div class="pizza-card">
             <img src="./img/Pizza Americana.jpg" alt="Pizza Americana" class="pizza-americana">
             <p> Mussarela, Bacon e Cebola</p>
-            <h3>Broto - R$30,00</h3>
-            <button onclick="AdicionarAoCarrinho('Pizza Broto Americana' , 30)">Adicionar ao Carrinho</button>
+            <h3>Broto - R$34,00</h3>
+            <button onclick="AdicionarAoCarrinho('Pizza Broto Americana' , 34)">Adicionar ao Carrinho</button>
             <div class="pizza-americana">
                 <h3>Pizza Grande - R$ 50,00</h3>
                 <button onclick="AdicionarAoCarrinho('Pizza Grande Americana', 50)">Adicionar ao Carrinho</button>
@@ -89,10 +100,10 @@
             <img src="./img/Pizza Atum.jpg" alt="Pizza de Atum" class="pizza-de-atum">
             <p> Atum e Cebola</p>
             <h3>Broto - R$30,00</h3>
-            <button onclick="AdicionarAoCarrinho('Pizza Broto Atum' , 30)">Adicionar ao Carrinho</button>
+            <button onclick="AdicionarAoCarrinho('Pizza Broto Atum' , 34)">Adicionar ao Carrinho</button>
             <div class="pizza-de-atum">
-                <h3>Pizza Grande - R$ 55,00</h3>
-                <button onclick="AdicionarAoCarrinho('Pizza Grande Atum', 55)">Adicionar ao Carrinho</button>
+                <h3>Pizza Grande - R$ 47,00</h3>
+                <button onclick="AdicionarAoCarrinho('Pizza Grande Atum', 47)">Adicionar ao Carrinho</button>
             </div>
             </div>
         </div>
@@ -104,8 +115,8 @@
         <div class="pizza-card">
         <img src="./img/Pizza Baiana.jpg" alt="Pizza Baiana" class="pizza-baiana">
         <p>Calabresa, Cebola, Mussarela, Ovo e Pimenta</p>
-        <h3>Broto - R$30,00</h3>
-        <button onclick="AdicionarAoCarrinho('Pizza Broto Baiana' , 30)">Adicionar ao Carrinho</button>
+        <h3>Broto - R$34,00</h3>
+        <button onclick="AdicionarAoCarrinho('Pizza Broto Baiana' , 34)">Adicionar ao Carrinho</button>
         <div class="pizza-baiana">
             <h3>Pizza Grande - R$ 50</h3>
             <button onclick="AdicionarAoCarrinho('Pizza Grande Baiana', 50)">Adicionar ao Carrinho</button>
@@ -119,8 +130,8 @@
         <div class="pizza-card">
             <img src="./img/Pizza Bacon.jpg" alt="Pizza de Bacon" class="pizza-de-bacon">
             <p> Mussarela, Bacon e Cebola</p>
-            <h3>Broto - R$30,00</h3>
-            <button onclick="AdicionarAoCarrinho('Pizza Broto Bacon' , 30)">Adicionar ao Carrinho</button>
+            <h3>Broto - R$34,00</h3>
+            <button onclick="AdicionarAoCarrinho('Pizza Broto Bacon' , 34)">Adicionar ao Carrinho</button>
             <div class="pizza-de-bacon">
                 <h3>Pizza Grande - R$ 50,00</h3>
                 <button onclick="AdicionarAoCarrinho('Pizza Grande Bacon', 50)">Adicionar ao Carrinho</button>
@@ -136,8 +147,8 @@
         <div class="pizza-card">
             <img src="./img/Pizza Bauru.jpg" alt="Pizza de Bauru" class="pizza-de-bauru">
             <p>Presunto, Tomate e Mussarela</p>
-            <h2>Broto - R$30,00</h2>
-            <button onclick="AdicionarAoCarrinho('Pizza Broto Bauru' , 30)">Adicionar ao Carrinho</button>
+            <h2>Broto - R$34,00</h2>
+            <button onclick="AdicionarAoCarrinho('Pizza Broto Bauru' , 34)">Adicionar ao Carrinho</button>
             <div class="pizza-de-bauru">
                 <h2>Pizza Grande - R$ 47,00</h2>
                 <button onclick="AdicionarAoCarrinho('Pizza Grande Bauru', 47)">Adicionar ao Carrinho</button>
@@ -150,8 +161,8 @@
         <div class="pizza-card">
             <img src="./img/Pizza Brasileira.jpg" alt="Pizza Brasileira" class="pizza-brasileira">
             <p>Frango, Palmito, Bacon, Milho verde e Mussarela</p>
-            <h3>Broto - R$30,00</h3>
-            <button onclick="AdicionarAoCarrinho('Pizza Broto Brasileira' , 30)">Adicionar ao Carrinho</button>
+            <h3>Broto - R$34,00</h3>
+            <button onclick="AdicionarAoCarrinho('Pizza Broto Brasileira' , 34)">Adicionar ao Carrinho</button>
             <div class="pizza-brasileira">
                 <h3>Pizza Grande - R$ 47,00</h3>
                 <button onclick="AdicionarAoCarrinho('Pizza Grande Brasileira', 47)">Adicionar ao Carrinho</button>
@@ -165,8 +176,8 @@
         <div class="pizza-card">
             <img src="./img/Pizza Brocolis.jpg" alt="Pizza de Brocolis" class="pizza- de-brocolis">
             <p> Mussarela, Alho Frito e Brocolis</p>
-            <h3>Broto - R$30,00</h3>
-            <button onclick="AdicionarAoCarrinho('Pizza Broto Brocolis' , 30)">Adicionar ao Carrinho</button>
+            <h3>Broto - R$34,00</h3>
+            <button onclick="AdicionarAoCarrinho('Pizza Broto Brocolis' , 34)">Adicionar ao Carrinho</button>
             <div class="pizza-de-brocolis">
                 <h3>Pizza Grande - R$ 47,00</h3>
                 <button onclick="AdicionarAoCarrinho('Pizza Grande Brocolis', 47)">Adicionar ao Carrinho</button>
@@ -181,8 +192,8 @@
         <div class="pizza-card">
             <img src="./img/Pizza Caipira.jpg" alt="Pizza Caipira" class="pizza-caipira">
             <p>Frango, Milho e Mussarela</p>
-            <h2>Broto - R$30,00</h2>
-            <button onclick="AdicionarAoCarrinho('Pizza Broto Caipira' , 30)">Adicionar ao Carrinho</button>
+            <h2>Broto - R$34,00</h2>
+            <button onclick="AdicionarAoCarrinho('Pizza Broto Caipira' , 34)">Adicionar ao Carrinho</button>
             <div class="pizza-caipira">
                 <h2>Pizza Grande - R$ 43,00</h2>
                 <button onclick="AdicionarAoCarrinho('Pizza Grande Caipira', 43)">Adicionar ao Carrinho</button>
@@ -197,8 +208,8 @@
         <div class="pizza-card">
             <img src="./img/Pizza Católes.jpg" alt="Pizza Católes" class="pizza-catoles">
             <p>Mussarela, Frango e Bacon</p>
-            <h3>Broto - R$30,00</h3>
-            <button onclick="AdicionarAoCarrinho('Pizza Broto Católes' , 30)">Adicionar ao Carrinho</button>
+            <h3>Broto - R$34,00</h3>
+            <button onclick="AdicionarAoCarrinho('Pizza Broto Católes' , 34)">Adicionar ao Carrinho</button>
             <div class="pizza-catoles">
                 <h3>Pizza Grande - R$ 47,00</h3>
                <button onclick="AdicionarAoCarrinho('Pizza Grande Católes', 47)">Adicionar ao Carrinho</button> 
@@ -213,8 +224,8 @@
         <div class="pizza-card">
         <img src="./img/Pizza Chilena.jpg" alt="Pizza Chilena" class="pizza-chilena">
         <p>Molho, Calabresa, Palmito e Mussarela</p>
-        <h3>Broto - R$30,00</h3>
-        <button onclick="AdicionarAoCarrinho('Pizza Broto Chilena' , 30)">Adicionar ao Carrinho</button>
+        <h3>Broto - R$34,00</h3>
+        <button onclick="AdicionarAoCarrinho('Pizza Broto Chilena' , 34)">Adicionar ao Carrinho</button>
         <div class="pizza-chilena">
             <h3>Pizza Grande - R$ 47,00</h3>
             <button onclick="AdicionarAoCarrinho('Pizza Grande Chilena', 47)">Adicionar ao Carrinho</button>
@@ -229,8 +240,8 @@
         <div class="pizza-card">
             <img src="./img/Pizza Espanhola.jpg" alt="Pizza Espanhola" class="pizza-espanhola">
             <p>Mussarela, Atum e Cebola</p>
-            <h3>Broto - R$30,00</h3>
-            <button onclick="AdicionarAoCarrinho('Pizza Broto Espanhola' , 30)">Adicionar ao Carrinho</button>
+            <h3>Broto - R$34,00</h3>
+            <button onclick="AdicionarAoCarrinho('Pizza Broto Espanhola' , 34)">Adicionar ao Carrinho</button>
             <div class="pizza-espanhola">
                 <h3>Pizza Grande - R$ 47,00</h3>
                 <button onclick="AdicionarAoCarrinho('Pizza Grande Espanhola', 47)">Adicionar ao Carrinho</button>
@@ -245,11 +256,11 @@
         <div class="pizza-card">
             <img src="./img/Pizza Lombo.jpg" alt="Pizza de Lombo" class="pizza-de-lombo">
             <p>Lombo, Mussarela e Cebola</p>
-            <h3>Broto - R$30,00</h3>
-            <button onclick="AdicionarAoCarrinho('Pizza Broto Lombo' , 30)">Adicionar ao Carrinho</button>
+            <h3>Broto - R$34,00</h3>
+            <button onclick="AdicionarAoCarrinho('Pizza Broto Lombo' , 34)">Adicionar ao Carrinho</button>
             <div class="pizza-de-lombo">
-                <h3>Pizza Grande - R$ 55,00</h3>
-                <button onclick="AdicionarAoCarrinho('Pizza Grande Lombo', 55)">Adicionar ao Carrinho</button>
+                <h3>Pizza Grande - R$ 47,00</h3>
+                <button onclick="AdicionarAoCarrinho('Pizza Grande Lombo', 47)">Adicionar ao Carrinho</button>
             </div>
         </div>
         </div>
@@ -261,11 +272,11 @@
         <div class="pizza-card">
             <img src="./img/Pizza Frango com Catupiry.jpg" alt="Pizza Frango com Catupiry" class="pizza-com-catupiry">
             <p>Frango com Catupiry</p>
-            <h3>Broto - R$30,00</h3>
-            <button onclick="AdicionarAoCarrinho('Pizza Broto Frango com Catupiry' , 30)">Adicionar ao Carrinho</button>
+            <h3>Broto - R$34,00</h3>
+            <button onclick="AdicionarAoCarrinho('Pizza Broto Frango com Catupiry' , 34)">Adicionar ao Carrinho</button>
             <div class="pizza-frango-com-catupiry">
-                <h3>Pizza Grande - R$ 50,00</h3>
-                <button onclick="AdicionarAoCarrinho('Pizza Grande Frango com Catupiry', 50)">Adicionar ao Carrinho</button>
+                <h3>Pizza Grande - R$ 47,00</h3>
+                <button onclick="AdicionarAoCarrinho('Pizza Grande Frango com Catupiry', 47)">Adicionar ao Carrinho</button>
             </div>
         </div>
         </div>
@@ -276,8 +287,8 @@
         <div class="pizza-card">
         <img src="./img/Pizza Marguerita.jpg" alt="Pizza Marguerita" class="pizza-marguerita">
         <p>Mussarela, Parmesão, Manjericão e Tomate</p>
-        <h3>Broto - R$30,00</h3>
-        <button onclick="AdicionarAoCarrinho('Pizza Broto Marguerita' , 30)">Adicionar ao Carrinho</button>
+        <h3>Broto - R$34,00</h3>
+        <button onclick="AdicionarAoCarrinho('Pizza Broto Marguerita' , 34)">Adicionar ao Carrinho</button>
         <div class="pizza-marguerita">
             <h3>Pizza Grande - R$ 47,00</h3>
             <button onclick="AdicionarAoCarrinho('Pizza Grande Marguerita', 47)">Adicionar ao Carrinho</button>
@@ -292,7 +303,7 @@
         <div class="pizza-card">
             <img src="./img/Pizza Mexicana.jpg" alt="Pizza Mexicana" class="pizza-mexicana">
             <p> Calabresa, Bacon e Cebola</p>
-            <h3>Broto - R$30,00</h3>
+            <h3>Broto - R$34,00</h3>
             <button onclick="AdicionarAoCarrinho('Pizza Broto Mexicana' , 30)">Adicionar ao Carrinho</button>
             <div class="pizza-mexicana">
                 <h3>Pizza Grande - R$ 47,00</h3>
@@ -308,8 +319,8 @@
         <div class="pizza-card">
             <img src="./img/Pizza Milho Verde.jpg" alt="Pizza de Milho verde" class="pizza-milho">
             <p>Mussarela e Milho</p>
-            <h3>Broto - R$30,00</h3>
-            <button onclick="AdicionarAoCarrinho('Pizza Broto Milho Verde' , 30)">Adicionar ao Carrinho</button>
+            <h3>Broto - R$34,00</h3>
+            <button onclick="AdicionarAoCarrinho('Pizza Broto Milho Verde' , 34)">Adicionar ao Carrinho</button>
             <div class="pizza-milho">
                 <h3>Pizza Grande - R$ 43,00</h3>
                 <button onclick="AdicionarAoCarrinho('Pizza Grande Milho Verde', 43)">Adicionar ao Carrinho</button>
@@ -324,7 +335,7 @@
         <div class="pizza-card">
         <img src="./img/Pizza Mussarela.jpg" alt="Pizza Mussarela" class="pizza-mussarela">
         <p>Mussarela, Tomate e Orégano</p>
-        <h3>Broto - R$30,00</h3>
+        <h3>Broto - R$34,00</h3>
         <button onclick="AdicionarAoCarrinho('Pizza Broto Mussarela' , 30)">Adicionar ao Carrinho</button>
         <div class="pizza-espanhola">
             <h3>Pizza Grande - R$ 43,00</h3>
@@ -340,8 +351,8 @@
         <div class="pizza-card">
             <img src="./img/Pizza Calabresa.jpg" alt="Pizza de Calabresa" class="pizza-calabresa">
             <p>Calabresa e Cebola</p>
-            <h3>Broto - R$30,00</h3>
-            <button onclick="AdicionarAoCarrinho('Pizza Broto Calabresa' , 30)">Adicionar ao Carrinho</button>
+            <h3>Broto - R$34,00</h3>
+            <button onclick="AdicionarAoCarrinho('Pizza Broto Calabresa' , 34)">Adicionar ao Carrinho</button>
             <div class="pizza-calabresa">
                 <h3>Pizza Grande - R$ 43,00</h3>
                 <button onclick="AdicionarAoCarrinho('Pizza Grande Calabresa', 43)">Adicionar ao Carrinho</button>
@@ -356,8 +367,8 @@
         <div class="pizza-card">
             <img src="./img/Pizza Palmito.jpg" alt="Pizza de Palmito" class="pizza-palmito">
             <p>Mussarela e Palmito</p>
-            <h3>Broto - R$30,00</h3>
-            <button onclick="AdicionarAoCarrinho('Pizza Broto Palmito' , 30)">Adicionar ao Carrinho</button>
+            <h3>Broto - R$34,00</h3>
+            <button onclick="AdicionarAoCarrinho('Pizza Broto Palmito' , 34)">Adicionar ao Carrinho</button>
             <div class="pizza-palmito">
                 <h3>Pizza Grande - R$ 47,00</h3>
                 <button onclick="AdicionarAoCarrinho('Pizza Grande Palmito', 47)">Adicionar ao Carrinho</button>
@@ -372,8 +383,8 @@
         <div class="pizza-card">
         <img src="./img/Pizza 2 Queijos.jpg" alt="Pizza de Palmito" class="pizza-2-queijo">
         <p>Mussarela e Catupiry</p>
-        <h3>Broto - R$30,00</h3>
-        <button onclick="AdicionarAoCarrinho('Pizza Broto' , 30)">Adicionar ao Carrinho</button>
+        <h3>Broto - R$34,00</h3>
+        <button onclick="AdicionarAoCarrinho('Pizza Broto' , 34)">Adicionar ao Carrinho</button>
         <div class="pizza-2-queijo">
             <h3>Pizza Grande - R$ 45,00</h3>
             <button onclick="AdicionarAoCarrinho('Pizza Grande', 45)">Adicionar ao Carrinho</button>
@@ -388,7 +399,7 @@
         <div class="pizza-card">
             <img src="./img/Pizza Toscana.jpg" alt="Pizza Toscana" class="pizza-toscana">
             <p>Mussarela, Cebola e Calabresa</p>
-            <h3>Broto - R$30,00</h3>
+            <h3>Broto - R$34,00</h3>
             <button onclick="AdicionarAoCarrinho('Pizza Broto Toscana' , 30)">Adicionar ao Carrinho</button>
             <div class="pizza-palmito">
                 <h3>Pizza Grande - R$ 43,00</h3>
@@ -404,8 +415,8 @@
         <div class="pizza-card">
             <img src="./img/Pizza Carijó.jpg" alt="Pizza Carijó" class="pizza-carijo">
             <p>Frango, Ovo, Cebola, Bacon e Mussarela</p>
-            <h3>Broto - R$30,00</h3>
-            <button onclick="AdicionarAoCarrinho('Pizza Broto Carijó' , 30)" class="">Adicionar ao Carrinho</button>
+            <h3>Broto - R$38,00</h3>
+            <button onclick="AdicionarAoCarrinho('Pizza Broto Carijó' , 38)" class="">Adicionar ao Carrinho</button>
             <div class="pizza-carijo">
                 <h3>Pizza Grande - R$ 55,00</h3>
                 <button onclick="AdicionarAoCarrinho('Pizza Grande Carijó', 55)" class="grande">Adicionar ao Carrinho</button>
@@ -420,8 +431,8 @@
         <div class="pizza-card">
             <img src="./img/Pizza Chilena.jpg" alt="Pizza Chilena" class="pizza-chilena">
             <p>Mussarela, Frango,Palmito, Bacon e Catupiry</p>
-            <h2>Broto - R$30,00</h2>
-            <button onclick="AdicionarAoCarrinho('Pizza Broto Chilena 2' , 30)" class="">Adicionar ao Carrinho</button>
+            <h2>Broto - R$38,00</h2>
+            <button onclick="AdicionarAoCarrinho('Pizza Broto Chilena 2' , 38)" class="">Adicionar ao Carrinho</button>
             <div class="pizza-alema">
                 <h3>Pizza Grande - R$ 55,00</h2>
                 <button onclick="AdicionarAoCarrinho('Pizza Grande Chilena 2', 55)" class="grande">Adicionar ao Carrinho</button>
@@ -436,8 +447,8 @@
         <div class="pizza-card">
             <img src="./img/Pizza Cubana.jpg" alt="Pizza Cubana" class="pizza-cubana">
             <p> Mussarela, Calabresa, Vinagrete e Bacon</p>
-            <h3>Broto - R$30,00</h3>
-            <button onclick="AdicionarAoCarrinho('Pizza Broto Cubana' , 30)" class="">Adicionar ao Carrinho</button>
+            <h3>Broto - R$38,00</h3>
+            <button onclick="AdicionarAoCarrinho('Pizza Broto Cubana' , 38)" class="">Adicionar ao Carrinho</button>
             <div class="pizza-cubana">
                 <h3>Pizza Grande - R$ 55,00</h3>
                 <button onclick="AdicionarAoCarrinho('Pizza Grande Cubana', 55)" class="grande">Adicionar ao Carrinho</button>
@@ -452,8 +463,8 @@
         <div class="pizza-card">
             <img src="./img/Pizza Dinapoli.jpg" alt="Pizza Dinapoli" class="pizza-dinapoli">
             <p>Presunto, Ovo, Ervilha, Palmito, Cebola e Mussarela</p>
-            <h3>Broto - R$30,00</h3>
-            <button onclick="AdicionarAoCarrinho('Pizza Broto Dinapoli' , 30)" class="">Adicionar ao Carrinho</button>
+            <h3>Broto - R$38,00</h3>
+            <button onclick="AdicionarAoCarrinho('Pizza Broto Dinapoli' , 38)" class="">Adicionar ao Carrinho</button>
             <div class="pizza-dinapoli">
                 <h3>Pizza Grande - R$ 60,00</h3>
                 <button onclick="AdicionarAoCarrinho('Pizza Grande Dinapoli', 60)" class="grande">Adicionar ao Carrinho</button>
@@ -468,8 +479,8 @@
         <div class="pizza-card">
             <img src="./img/Pizza Francesinha.jpg" alt="Pizza Francesinha" class="pizza-francesinha">
             <p>Gorgonzola, Provolone, Catupiry e Mussarela</p>
-            <h3>Broto - R$30,00</h3>
-            <button onclick="AdicionarAoCarrinho('Pizza Broto Francesinha' , 30)" class="">Adicionar ao Carrinho</button>
+            <h3>Broto - R$38,00</h3>
+            <button onclick="AdicionarAoCarrinho('Pizza Broto Francesinha' , 38)" class="">Adicionar ao Carrinho</button>
             <div class="pizza-francesinha">
                 <h3>Pizza Grande - R$ 60,00</h3>
                 <button onclick="AdicionarAoCarrinho('Pizza Grande Francesinha', 60)" class="grande">Adicionar ao Carrinho</button>
@@ -484,8 +495,8 @@
         <div class="pizza-card">
             <img src="./img/Pizza Jardineira.jpg" alt="Pizza Jardineira" class="pizza-jardineira">
             <p>Salame Fatiado e Mussarela</p>
-            <h3>Broto - R$30,00</h3>
-            <button onclick="AdicionarAoCarrinho('Pizza Broto Jardineira' , 30)" class="">Adicionar ao Carrinho</button>
+            <h3>Broto - R$38,00</h3>
+            <button onclick="AdicionarAoCarrinho('Pizza Broto Jardineira' , 38)" class="">Adicionar ao Carrinho</button>
             <div class="pizza-jardineira">
                 <h3>Pizza Grande - R$ 60,00</h3>
                 <button onclick="AdicionarAoCarrinho('Pizza Grande Jardineira', 60)" class="grande">Adicionar ao Carrinho</button>
@@ -500,7 +511,7 @@
         <div class="pizza-card">
             <img src="./img/Pizza Nordestina.jpg" alt="Pizza Nordestina" class="pizza-nordestina">
             <p>Presunto, Ovo, Ervilha, Palmito, Cebola e Mussarela</p>
-            <h3>Broto - R$30,00</h3>
+            <h3>Broto - R$38,00</h3>
             <button onclick="AdicionarAoCarrinho('Pizza Broto Nordestina' , 30)" class="">Adicionar ao Carrinho</button>
             <div class="pizza-nordestina">
                 <h3>Pizza Grande - R$ 55,00</h3>
@@ -516,8 +527,8 @@
         <div class="pizza-card">
             <img src="./img/Pizza Paulista.jpg" alt="Pizza Paulista" class="pizza-paulista">
             <p>Ervilha, Bacon, Palmito, Tomate e Mussarela</p>
-            <h3>Broto - R$30,00</h3>
-            <button onclick="AdicionarAoCarrinho('Pizza Broto Paulista' , 30)" class="">Adicionar ao Carrinho</button>
+            <h3>Broto - R$38,00</h3>
+            <button onclick="AdicionarAoCarrinho('Pizza Broto Paulista' , 38)" class="">Adicionar ao Carrinho</button>
             <div class="pizza-paulista">
                 <h3>Pizza Grande - R$ 60,00</h3>
                 <button onclick="AdicionarAoCarrinho('Pizza Grande Paulista', 60)" class="grande">Adicionar ao Carrinho</button>
@@ -532,8 +543,8 @@
         <div class="pizza-card">
             <img src="./img/Pizza Peruana.jpg" alt="Pizza Peruana" class="pizza-peruana">
             <p>Atum Mussarela e Bacon</p>
-            <h3>Broto - R$30,00</h3>
-            <button onclick="AdicionarAoCarrinho('Pizza Broto Peruana' , 30)" class="">Adicionar ao Carrinho</button>
+            <h3>Broto - R$38,00</h3>
+            <button onclick="AdicionarAoCarrinho('Pizza Broto Peruana' , 38)" class="">Adicionar ao Carrinho</button>
             <div class="pizza-peruana">
                 <h3>Pizza Grande - R$ 60,00</h3>
                 <button onclick="AdicionarAoCarrinho('Pizza Grande Peruana', 60)" class="grande">Adicionar ao Carrinho</button>
@@ -548,11 +559,11 @@
         <div class="pizza-card">
             <img src="./img/Pizza Portuguesa.jpg" alt="Pizza Portuguesa" class="pizza-portuguesa">
             <p>Presunto, Ervilha, Ovo, Cebola e Mussarela</p>
-            <h3>Broto - R$30,00</h3>
+            <h3>Broto - R$38,00</h3>
             <button onclick="AdicionarAoCarrinho('Pizza Broto Portugesa' , 30)" class="">Adicionar ao Carrinho</button>
             <div class="pizza-portuguesa">
-                <h3>Pizza Grande - R$ 60,00</h3>
-                <button onclick="AdicionarAoCarrinho('Pizza Grande Portugesa', 60)" class="grande">Adicionar ao Carrinho</button>
+                <h3>Pizza Grande - R$ 55,00</h3>
+                <button onclick="AdicionarAoCarrinho('Pizza Grande Portugesa', 55)" class="grande">Adicionar ao Carrinho</button>
             </div>
         </div>
         </div>                
@@ -580,11 +591,11 @@
         <div class="pizza-card">
             <img src="./img/Pizza Universo.jpg" alt="Pizza Universo" class="pizza-universo">
             <p>Calabresa, Ervilha, Tomate, Bacon e Mussarela</p>
-            <h3>Broto - R$30,00</h3>
-            <button onclick="AdicionarAoCarrinho('Pizza Broto Universo' , 30)" class="">Adicionar ao Carrinho</button>
+            <h3>Broto - R$38,00</h3>
+            <button onclick="AdicionarAoCarrinho('Pizza Broto Universo' , 38)" class="">Adicionar ao Carrinho</button>
             <div class="pizza-universo">
                 <h3>Pizza Grande - R$ 55,00</h3>
-                <button onclick="AdicionarAoCarrinho('Pizza Grande Universo', 55)" class="grande">Adicionar ao Carrinho</button>
+                <button onclick="AdicionarAoCarrinho('Pizza Grande Universo',55 )" class="grande">Adicionar ao Carrinho</button>
             </div>
         </div>
         </div>
@@ -596,8 +607,8 @@
         <div class="pizza-card">
             <img src="./img/Pizza 4 Queijos.jpg" alt="Pizza 4 Queijos" class="pizza-4-queijos">
             <p>Mussarela, Catupiry, Provolone e Parmesão</p>
-            <h3>Broto - R$30,00</h3>
-            <button onclick="AdicionarAoCarrinho('Pizza Broto Quatro Queijos' , 30)" class="">Adicionar ao Carrinho</button>
+            <h3>Broto - R$38,00</h3>
+            <button onclick="AdicionarAoCarrinho('Pizza Broto Quatro Queijos' , 38)" class="">Adicionar ao Carrinho</button>
             <div class="pizza-paulista">
                 <h3>Pizza Grande - R$ 60,00</h3>
                 <button onclick="AdicionarAoCarrinho('Pizza Grande Quatro Queijos', 60)" class="grande">Adicionar ao Carrinho</button>
@@ -612,8 +623,8 @@
         <div class="pizza-card">
             <img src="./img/Pizza 3 Queijos.jpg" alt="Pizza 3 Queijos" class="pizza-3-queijos">
             <p>Mussarela, Catupiry e Parmesão</p>
-            <h3>Broto - R$30,00</h3>
-            <button onclick="AdicionarAoCarrinho('Pizza Broto Tres Queijos' , 30)" class="">Adicionar ao Carrinho</button>
+            <h3>Broto - R$38,00</h3>
+            <button onclick="AdicionarAoCarrinho('Pizza Broto Tres Queijos' , 38)" class="">Adicionar ao Carrinho</button>
             <div class="pizza-3-queijos">
                 <h3>Pizza Grande - R$ 55,00</h3>
                 <button onclick="AdicionarAoCarrinho('Pizza Grande Tres Queijos', 55)" class="grande">Adicionar ao Carrinho</button>
@@ -628,7 +639,7 @@
         <div class="pizza-card">
             <img src="./img/Pizza Carne Seca.jpg" alt="Pizza Carne Seca" class="pizza-carne-seca">
             <p>Carne Seca, Cebola, Mussarela, Cheddar ou Catupiry</p>
-            <h3>Broto - R$30,00</h3>
+            <h3>Broto - R$40,00</h3>
             <button onclick="AdicionarAoCarrinho('Pizza Broto Carne Seca' , 30)" class="">Adicionar ao Carrinho</button>
             <div class="pizza-carne-seca">
                 <h3>Pizza Grande - R$ 55,00</h3>
@@ -644,8 +655,8 @@
         <div class="pizza-card">
             <img src="./img/Pizza Brigadeiro.jpg" alt="Pizza Brigadeiro" class="pizza-brigadeiro">
             <p>Chocolate ao Leite e Granulado</p>
-            <h3>Broto - R$30,00</h3>
-            <button onclick="AdicionarAoCarrinho('Pizza Broto Brigadeiro' , 30)" class="">Adicionar ao Carrinho</button>
+            <h3>Broto - R$38,00</h3>
+            <button onclick="AdicionarAoCarrinho('Pizza Broto Brigadeiro' , 38)" class="">Adicionar ao Carrinho</button>
             <div class="pizza-brigadeiro">
                 <h3>Pizza Grande - R$ 50,00</h3>
                 <button onclick="AdicionarAoCarrinho('Pizza Grande Brigadeiro', 50)" class="grande">Adicionar ao Carrinho</button>
@@ -660,7 +671,7 @@
         <div class="pizza-card">
             <img src="./img/pizza Chocolate.jpg" alt="Pizza de Chocolate" class="pizza-chocolate">
             <p>Chocolate ao Leite</p>
-            <h3>Broto - R$30,00</h3>
+            <h3>Broto - R$38,00</h3>
             <button onclick="AdicionarAoCarrinho('Pizza Broto Chocolate' , 30)" class="">Adicionar ao Carrinho</button>
             <div class="pizza-chocolate">
                 <h3> Grande - R$ 50,00</h2>
@@ -676,8 +687,8 @@
         <div class="pizza-card">
             <img src="./img/Pizza Morango.jpg" alt="Pizza de Morango" class="pizza-morango">
             <p>Chocolate ao leite e Morango</p>
-            <h3>Broto - R$30,00</h3>
-            <button onclick="AdicionarAoCarrinho('Pizza Broto Morango' , 30)" class="">Adicionar ao Carrinho</button>
+            <h3>Broto - R$38,00</h3>
+            <button onclick="AdicionarAoCarrinho('Pizza Broto Morango' , 38)" class="">Adicionar ao Carrinho</button>
             <div class="pizza-morango">
                 <h3>Pizza Grande - R$ 50,00</h3>
                 <button onclick="AdicionarAoCarrinho('Pizza Grande Morango', 50)" class="grande">Adicionar ao Carrinho</button>
@@ -692,7 +703,7 @@
         <div class="pizza-card">
             <img src="./img/Pizza M&M.jpg" alt="Pizza M&MS" class="pizza-M&MS">
             <p>Chocolate ao Leite e M&MS</p>
-            <h3>Broto - R$30,00</h3>
+            <h3>Broto - R$38,00</h3>
             <button onclick="AdicionarAoCarrinho('Pizza Broto M&MS' , 30)" class="">Adicionar ao Carrinho</button>
             <div class="pizza-M&MS">
                 <h3>Pizza Grande - R$ 50,00</h3>
@@ -708,11 +719,11 @@
         <div class="pizza-card">
             <img src="./img/Pizza Prestigio.jpg" alt="Pizza Prestigio" class="pizza-prestigio">
             <p>Chocolate, Creme de Leite, e Coco Ralado</p>
-            <h3>Broto - R$30,00</h3>
-            <button onclick="AdicionarAoCarrinho('Pizza Broto Prestigio' , 30)" class="">Adicionar ao Carrinho</button>
+            <h3>Broto - R$38,00</h3>
+            <button onclick="AdicionarAoCarrinho('Pizza Broto Prestigio' , 38)" class="">Adicionar ao Carrinho</button>
             <div class="pizza-prestigio">
                 <h3>Pizza Grande - R$ 50,00</h3>
-                <button onclick="AdicionarAoCarrinho('Pizza Grande Prestigio', 60)" class="grande">Adicionar ao Carrinho</button>
+                <button onclick="AdicionarAoCarrinho('Pizza Grande Prestigio', 50)" class="grande">Adicionar ao Carrinho</button>
             </div>
         </div>
         </div>
@@ -724,13 +735,69 @@
         <div class="pizza-card">
             <img src="./img/Pizza Romeu e Julieta.jpg" alt="Pizza Romeu e Julieta" class="pizza-romeu-e-julieta">
             <p>Goiabada e Mussarela</p>
-            <h3>Broto - R$30,00</h3>
+            <h3>Broto - R$38,00</h3>
             <button onclick="AdicionarAoCarrinho('Pizza Broto Romeu e Julieta' , 30)" class="">Adicionar ao Carrinho</button>
             <div class="pizza-romeu-e-julieta">
                 <h3>Pizza Grande - R$ 50,00</h3>
                 <button onclick="AdicionarAoCarrinho('Pizza Grande Romeu e Julieta', 50)" class="grande">Adicionar ao Carrinho</button>
             </div>
         </div>
+        </div>
+    </section>  
+
+
+    <section id="Esfihas">
+        <h2>Esfiha Carne</h2>
+        <div class="esfiha-container">
+        <div class="esfiha-card">
+            <img src="./img/Esfiha carne.jpeg" alt="Esfiha carne" class="esfiha-carne">
+            <h3>R$2,00</h3>
+            <button onclick="AdicionarAoCarrinho('Esfiha Carne' , 2)" class="esfiha-carne">Adicionar ao Carrinho</button>
+            </div>
+        </div>
+    </section>
+
+     <section>
+        <h2>Esfiha Carne com Mussarela</h2>
+        <div class="pizza-container">
+        <div class="pizza-card">
+            <img src="./img/Esfiha carne com Mussarela.jpeg" alt="Esfiha carne com Mussarela" class="esfiha-carne-mussarela">
+            <h3>R$3,50</h3>
+            <button onclick="AdicionarAoCarrinho('Esfiha Carne com Mussarela' , 3.50)" class="esfiha-carne-mussarela">Adicionar ao Carrinho</button>
+            </div>  
+        </div>
+    </section>
+
+    <section>
+        <h2>Esfiha Carne com Cheddar</h2>
+        <div class="esfiha-container">
+        <div class="esfiha-card">
+            <img src="./img/Esfiha carne com Cheddar.jpeg" alt="Esfiha carne com Cheddar" class="esfiha-carne-cheddar">
+            <h3>R$3,50</h3>
+            <button onclick="AdicionarAoCarrinho('Esfiha Carne com Cheddar' , 3.50)" class="esfiha-carne-cheddar">Adicionar ao Carrinho</button>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Esfiha Calabresa</h2>
+        <div class="esfiha-container">
+        <div class="esfiha-card">
+            <img src="./img/Esfiha Calabresa.jpeg" alt="Esfiha Calabresa" class="esfiha-calabresa">
+            <h3>R$2,00</h3>
+            <button onclick="AdicionarAoCarrinho('Esfiha Calabresa' , 2)" class="esfiha-calabresa">Adicionar ao Carrinho</button>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Esfiha Calabresa com Mussarela</h2>
+        <div class="esfiha-container">
+        <div class="esfiha-card">
+            <img src="./img/Esfiha Calabresa com Queijo.jpeg" alt="Esfiha Calabresa com Mussarela" class="esfiha-calabresa-mussarela">
+            <h3>R$2,00</h3>
+            <button onclick="AdicionarAoCarrinho('Esfiha Calabresa' , 2)" class="esfiha-calabresa">Adicionar ao Carrinho</button>
+            </div>
         </div>
     </section>
 
