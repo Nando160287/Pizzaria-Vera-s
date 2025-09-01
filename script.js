@@ -46,6 +46,13 @@ function AdicionarMeiaPizza() {
     resultado.textContent = `Meia pizza de ${sabor1} + ${sabor2}. Valor: R$${precoFinal.toFixed(2)} 🍕`;
     AdicionarAoCarrinho(`Meia ${sabor1} + Meia ${sabor2}`, precoFinal);
   }
+
+  function combos() {
+    const comboSelect = document.getElementById("combo");
+    const combo = comboSelect.value;
+    const precoCombo = parseFloat(comboSelect.options[comboSelect.selectedIndex].getAttribute("data-preco")) || 0;
+    const resultadoCombo = document.getElementById("resultadoCombo");
+  }
 }
 
 

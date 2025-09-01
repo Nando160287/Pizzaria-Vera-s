@@ -132,8 +132,31 @@ ul {
     height: auto;
 }
 
+#esfiha {
+    background: linear-gradient(to left, #228b22, #b22222);
+    padding: 20px;
+    color: white;
+    text-align: left;
+}
+
+.esfiha-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
 
 
+.esfiha-card img {
+    width: 100%;
+    height: auto;
+}
+
+#combos {
+    background: linear-gradient(to left, #228b22, #b22222);
+    padding: 20px;
+    color: white;
+    text-align: left;
+}
 
 .link-whatsapp {
     height: 60px;
