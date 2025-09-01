@@ -25,6 +25,7 @@
             </li>
             <li><a href="#Esfihas">Esfihas</a></li>
             <li><a href="#Esfihas-Doces">Esfihas Doces</a></li>
+            <li><a href="#Combos">Combos Especiais</a></li>
             <li><a href="#contato">Contato</a></li>
             <li><a href="#endereco">Endereço</a></li>
             <li><a href="#horario">Horário</a></li>
@@ -34,7 +35,7 @@
 </header>
 
 
-    <main></main>
+    <main>
 
     <section id="Pizzas-tradicionais">
         <h2>Pizza Alemã</h2>
@@ -45,15 +46,13 @@
             <h3>Broto - R$34,00</h3>
             <button onclick="AdicionarAoCarrinho('Pizza Broto Alemã' , 34)" class="">Adicionar ao Carrinho</button>
             <div class="pizza-alema">
-                <h3>Pizza Grande - R$ 50,00</h3>
-              <section>
-        <h2>Esfiha Calabresa</h2>
-        <div class="esfiha-container">
-        <div class="esfiha-card">
-            <img src="./img/Esfiha Calabresa.jpeg" alt="Esfiha Calabresa" class="esfiha-calabresa">
-            <h3>R$2,00</h3>
+                <h3>Pizza Grande - R$ 50,00</h3>             
             <button onclick="AdicionarAoCarrinho('Esfiha Calabresa' , 2)" class="esfiha-calabresa">Adicionar ao Carrinho</button>
-            </div>
+        <div class="meia-pizza">
+        <h3>Meia Pizza - R$45,00</h3>
+        <button onclick="AdicionarMeiaPizza('Pizza Carne Seca ')">Escolher como Meia Pizza</button>
+      </div>    
+        </div>
         </div>
     </section>
             </div>
@@ -72,26 +71,36 @@
             <div class="pizza-alema">
                 <h3>Pizza Grande - R$ 43,00</h3>
                 <button onclick="AdicionarAoCarrinho('Pizza Grande Alho', 43)">Adicionar ao Carrinho</button>
+            <div class="meia-pizza">
+        <h3>Meia Pizza - R$43,00</h3>
+        <button onclick="AdicionarMeiaPizza('Pizza Alho ',43)">Escolher como Meia Pizza</button>
+      </div>
             </div>
             </div>
         </div>
     </section>
     
-    <section>
-        <h2>Pizza Americana</h2>
-        <div class="pizza-container">
-        <div class="pizza-card">
-            <img src="./img/Pizza Americana.jpg" alt="Pizza Americana" class="pizza-americana">
-            <p> Mussarela, Bacon e Cebola</p>
-            <h3>Broto - R$34,00</h3>
-            <button onclick="AdicionarAoCarrinho('Pizza Broto Americana' , 34)">Adicionar ao Carrinho</button>
-            <div class="pizza-americana">
-                <h3>Pizza Grande - R$ 50,00</h3>
-                <button onclick="AdicionarAoCarrinho('Pizza Grande Americana', 50)">Adicionar ao Carrinho</button>
-            </div>
-            </div>
+   <section>
+  <h2>Pizza Americana</h2>
+  <div class="pizza-container">
+    <div class="pizza-card">
+      <img src="./img/Pizza Americana.jpg" alt="Pizza Americana" class="pizza-americana">
+      <p>Mussarela, Bacon e Cebola</p>
+      <h3>Broto - R$34,00</h3>
+      <button onclick="AdicionarAoCarrinho('Pizza Broto Americana', 34)">Adicionar ao Carrinho</button>
+
+      <div class="pizza-grande">
+        <h3>Pizza Grande - R$50,00</h3>
+        <button onclick="AdicionarAoCarrinho('Pizza Grande Americana', 50)">Adicionar ao Carrinho</button>
+      </div>
+
+      <div class="meia-pizza">
+        <h3>Meia Pizza - R$50,00</h3>
+        <button onclick="AdicionarMeiaPizza('Pizza Americana' ,50)">Escolher como Meia Pizza</button>
         </div>
-    </section>
+        </div>
+         </div>
+    </section>       
 
     <section>
         <h2>Pizza de Atum</h2>
@@ -104,6 +113,10 @@
             <div class="pizza-de-atum">
                 <h3>Pizza Grande - R$ 47,00</h3>
                 <button onclick="AdicionarAoCarrinho('Pizza Grande Atum', 47)">Adicionar ao Carrinho</button>
+            <div class="meia-pizza">
+        <h3>Meia Pizza - R$47,00</h3>
+        <button onclick="AdicionarMeiaPizza('Pizza Atum' ,47)">Escolher como Meia Pizza</button>
+      </div>
             </div>
             </div>
         </div>
@@ -120,7 +133,11 @@
         <div class="pizza-baiana">
             <h3>Pizza Grande - R$ 50</h3>
             <button onclick="AdicionarAoCarrinho('Pizza Grande Baiana', 50)">Adicionar ao Carrinho</button>
-            </div>
+        <div class="meia-pizza">
+        <h3>Meia Pizza - R$50,00</h3>
+        <button onclick="AdicionarMeiaPizza('Pizza Baiana ' ,50)">Escolher como Meia Pizza</button>
+      </div>    
+        </div>
         </div>
         </div>
     </section>
@@ -135,7 +152,11 @@
             <div class="pizza-de-bacon">
                 <h3>Pizza Grande - R$ 50,00</h3>
                 <button onclick="AdicionarAoCarrinho('Pizza Grande Bacon', 50)">Adicionar ao Carrinho</button>
-                </div>
+            <div class="meia-pizza">
+        <h3>Meia Pizza - R$50,00</h3>
+        <button onclick="AdicionarMeiaPizza('Pizza Bacon ',50)">Escolher como Meia Pizza</button>
+      </div>    
+            </div>
             </div>
         </div>
     </section>
@@ -152,7 +173,11 @@
             <div class="pizza-de-bauru">
                 <h2>Pizza Grande - R$ 47,00</h2>
                 <button onclick="AdicionarAoCarrinho('Pizza Grande Bauru', 47)">Adicionar ao Carrinho</button>
-                </div>
+            <div class="meia-pizza">
+        <h3>Meia Pizza - R$47,00</h3>
+        <button onclick="AdicionarMeiaPizza('Pizza Bauru ',47)">Escolher como Meia Pizza</button>
+      </div>    
+            </div>
             </div>
         </div>
     </section>
@@ -166,6 +191,10 @@
             <div class="pizza-brasileira">
                 <h3>Pizza Grande - R$ 47,00</h3>
                 <button onclick="AdicionarAoCarrinho('Pizza Grande Brasileira', 47)">Adicionar ao Carrinho</button>
+            <div class="meia-pizza">
+        <h3>Meia Pizza - R$47,00</h3>
+        <button onclick="AdicionarMeiaPizza('Pizza Brasileira ',47)">Escolher como Meia Pizza</button>
+      </div>
             </div>
         </div>
     </section>
@@ -181,7 +210,11 @@
             <div class="pizza-de-brocolis">
                 <h3>Pizza Grande - R$ 47,00</h3>
                 <button onclick="AdicionarAoCarrinho('Pizza Grande Brocolis', 47)">Adicionar ao Carrinho</button>
-          </div>
+          <div class="meia-pizza">
+        <h3>Meia Pizza - R$47,00</h3>
+        <button onclick="AdicionarMeiaPizza('Pizza Brocolis ',47)">Escolher como Meia Pizza</button>
+      </div>
+            </div>
             </div>
         </div>
     </section>
@@ -197,7 +230,11 @@
             <div class="pizza-caipira">
                 <h2>Pizza Grande - R$ 43,00</h2>
                 <button onclick="AdicionarAoCarrinho('Pizza Grande Caipira', 43)">Adicionar ao Carrinho</button>
-          </div>
+          <div class="meia-pizza">
+        <h3>Meia Pizza - R$43,00</h3>
+        <button onclick="AdicionarMeiaPizza('Pizza Caipira ',43)">Escolher como Meia Pizza</button>
+      </div>
+            </div>
             </div>
         </div>
     </section>
@@ -213,6 +250,10 @@
             <div class="pizza-catoles">
                 <h3>Pizza Grande - R$ 47,00</h3>
                <button onclick="AdicionarAoCarrinho('Pizza Grande Católes', 47)">Adicionar ao Carrinho</button> 
+            <div class="meia-pizza">
+        <h3>Meia Pizza - R$47,00</h3>
+        <button onclick="AdicionarMeiaPizza('Pizza Católes ',47)">Escolher como Meia Pizza</button>
+      </div>
             </div>
         </div>
         </div>
@@ -229,6 +270,10 @@
         <div class="pizza-chilena">
             <h3>Pizza Grande - R$ 47,00</h3>
             <button onclick="AdicionarAoCarrinho('Pizza Grande Chilena', 47)">Adicionar ao Carrinho</button>
+        <div class="meia-pizza">
+        <h3>Meia Pizza - R$47,00</h3>
+        <button onclick="AdicionarMeiaPizza('Pizza Chilena ',47)">Escolher como Meia Pizza</button>
+      </div>
         </div>
         </div>
         </div>
@@ -245,6 +290,10 @@
             <div class="pizza-espanhola">
                 <h3>Pizza Grande - R$ 47,00</h3>
                 <button onclick="AdicionarAoCarrinho('Pizza Grande Espanhola', 47)">Adicionar ao Carrinho</button>
+            <div class="meia-pizza">
+        <h3>Meia Pizza - R$47,00</h3>
+        <button onclick="AdicionarMeiaPizza('Pizza Espanhola ',47)">Escolher como Meia Pizza</button>
+      </div>
             </div>
         </div>
         </div>
@@ -261,6 +310,10 @@
             <div class="pizza-de-lombo">
                 <h3>Pizza Grande - R$ 47,00</h3>
                 <button onclick="AdicionarAoCarrinho('Pizza Grande Lombo', 47)">Adicionar ao Carrinho</button>
+            <div class="meia-pizza">
+        <h3>Meia Pizza - R$47,00</h3>
+        <button onclick="AdicionarMeiaPizza('Pizza Lombo ',47)">Escolher como Meia Pizza</button>
+      </div>
             </div>
         </div>
         </div>
@@ -277,6 +330,10 @@
             <div class="pizza-frango-com-catupiry">
                 <h3>Pizza Grande - R$ 47,00</h3>
                 <button onclick="AdicionarAoCarrinho('Pizza Grande Frango com Catupiry', 47)">Adicionar ao Carrinho</button>
+            <div class="meia-pizza">
+        <h3>Meia Pizza - R$47,00</h3>
+        <button onclick="AdicionarMeiaPizza('Pizza Frango com Catupiry ',47)">Escolher como Meia Pizza</button>
+      </div> 
             </div>
         </div>
         </div>
@@ -292,6 +349,10 @@
         <div class="pizza-marguerita">
             <h3>Pizza Grande - R$ 47,00</h3>
             <button onclick="AdicionarAoCarrinho('Pizza Grande Marguerita', 47)">Adicionar ao Carrinho</button>
+        <div class="meia-pizza">
+        <h3>Meia Pizza - R$47,00</h3>
+        <button onclick="AdicionarMeiaPizza('Pizza Marguerita ',47)">Escolher como Meia Pizza</button>
+      </div>
         </div>
         </div>
         </div>                
@@ -308,6 +369,10 @@
             <div class="pizza-mexicana">
                 <h3>Pizza Grande - R$ 47,00</h3>
                 <button onclick="AdicionarAoCarrinho('Pizza Grande Mexicana', 47)">Adicionar ao Carrinho</button>
+            <div class="meia-pizza">
+        <h3>Meia Pizza - R$47,00</h3>
+        <button onclick="AdicionarMeiaPizza('Pizza Mexicana ',47)">Escolher como Meia Pizza</button>
+      </div>
             </div>
         </div>
         </div>
@@ -324,6 +389,10 @@
             <div class="pizza-milho">
                 <h3>Pizza Grande - R$ 43,00</h3>
                 <button onclick="AdicionarAoCarrinho('Pizza Grande Milho Verde', 43)">Adicionar ao Carrinho</button>
+            <div class="meia-pizza">
+        <h3>Meia Pizza - R$43,00</h3>
+        <button onclick="AdicionarMeiaPizza('Pizza Milho Verde ',43)">Escolher como Meia Pizza</button>
+      </div>
             </div>
         </div>
         </div>
@@ -340,6 +409,10 @@
         <div class="pizza-espanhola">
             <h3>Pizza Grande - R$ 43,00</h3>
             <button onclick="AdicionarAoCarrinho('Pizza Grande Mussarela', 43)">Adicionar ao Carrinho</button>
+        <div class="meia-pizza">
+        <h3>Meia Pizza - R$43,00</h3>
+        <button onclick="AdicionarMeiaPizza('Pizza Mussarela',43)">Escolher como Meia Pizza</button>
+      </div>
         </div>
         </div>
         </div>
@@ -356,7 +429,11 @@
             <div class="pizza-calabresa">
                 <h3>Pizza Grande - R$ 43,00</h3>
                 <button onclick="AdicionarAoCarrinho('Pizza Grande Calabresa', 43)">Adicionar ao Carrinho</button>
-            </div>
+            <div class="meia-pizza">
+        <h3>Meia Pizza - R$43,00</h3>
+        <button onclick="AdicionarMeiaPizza('Pizza Calabresa',43)">Escolher como Meia Pizza</button>
+        </div>
+        </div>
         </div>
         </div>
     </section>
@@ -365,14 +442,18 @@
         <h2>Pizza de Palmito</h2>
         <div class="pizza-container">
         <div class="pizza-card">
-            <img src="./img/Pizza Palmito.jpg" alt="Pizza de Palmito" class="pizza-palmito">
-            <p>Mussarela e Palmito</p>
-            <h3>Broto - R$34,00</h3>
-            <button onclick="AdicionarAoCarrinho('Pizza Broto Palmito' , 34)">Adicionar ao Carrinho</button>
-            <div class="pizza-palmito">
-                <h3>Pizza Grande - R$ 47,00</h3>
-                <button onclick="AdicionarAoCarrinho('Pizza Grande Palmito', 47)">Adicionar ao Carrinho</button>
-            </div>
+        <img src="./img/Pizza Palmito.jpg" alt="Pizza de Palmito" class="pizza-palmito">
+        <p>Mussarela e Palmito</p>
+        <h3>Broto - R$34,00</h3>
+        <button onclick="AdicionarAoCarrinho('Pizza Broto Palmito' , 34)">Adicionar ao Carrinho</button>
+        <div class="pizza-palmito">
+            <h3>Pizza Grande - R$ 47,00</h3>
+            <button onclick="AdicionarAoCarrinho('Pizza Grande Palmito', 47)">Adicionar ao Carrinho</button>
+            <div class="meia-pizza">
+        <h3>Meia Pizza - R$47,00</h3>
+        <button onclick="AdicionarMeiaPizza('Pizza Palmito',47)">Escolher como Meia Pizza</button>
+      </div>
+        </div>
         </div>
         </div>
     </section>
@@ -384,10 +465,14 @@
         <img src="./img/Pizza 2 Queijos.jpg" alt="Pizza de Palmito" class="pizza-2-queijo">
         <p>Mussarela e Catupiry</p>
         <h3>Broto - R$34,00</h3>
-        <button onclick="AdicionarAoCarrinho('Pizza Broto' , 34)">Adicionar ao Carrinho</button>
+        <button onclick="AdicionarAoCarrinho('Pizza Broto 2 Queijos' , 34)">Adicionar ao Carrinho</button>
         <div class="pizza-2-queijo">
             <h3>Pizza Grande - R$ 45,00</h3>
-            <button onclick="AdicionarAoCarrinho('Pizza Grande', 45)">Adicionar ao Carrinho</button>
+            <button onclick="AdicionarAoCarrinho('Pizza Grande 2 Queijos', 45)">Adicionar ao Carrinho</button>
+        <div class="meia-pizza">
+        <h3>Meia Pizza - R$45,00</h3>
+        <button onclick="AdicionarMeiaPizza('Pizza 2 Queijos ', 45)">Escolher como Meia Pizza</button>
+      </div>
         </div>
         </div>
         </div>
@@ -404,6 +489,10 @@
             <div class="pizza-palmito">
                 <h3>Pizza Grande - R$ 43,00</h3>
                 <button onclick="AdicionarAoCarrinho('Pizza Grande Toscana', 43)">Adicionar ao Carrinho</button>
+            <div class="meia-pizza">
+        <h3>Meia Pizza - R$43,00</h3>
+        <button onclick="AdicionarMeiaPizza('Pizza Toscana ',43)">Escolher como Meia Pizza</button>
+      </div>
             </div>
         </div>
         </div>
@@ -420,7 +509,11 @@
             <div class="pizza-carijo">
                 <h3>Pizza Grande - R$ 55,00</h3>
                 <button onclick="AdicionarAoCarrinho('Pizza Grande Carijó', 55)" class="grande">Adicionar ao Carrinho</button>
-            </div>
+            <div class="meia-pizza">
+        <h3>Meia Pizza - R$55,00</h3>
+        <button onclick="AdicionarMeiaPizza('Pizza Carijó ',55)">Escolher como Meia Pizza</button>
+      </div>
+        </div>
         </div>
         </div>
     </section>
@@ -436,7 +529,11 @@
             <div class="pizza-alema">
                 <h3>Pizza Grande - R$ 55,00</h2>
                 <button onclick="AdicionarAoCarrinho('Pizza Grande Chilena 2', 55)" class="grande">Adicionar ao Carrinho</button>
-            </div>
+            <div class="meia-pizza">
+        <h3>Meia Pizza - R$55,00</h3>
+        <button onclick="AdicionarMeiaPizza('Pizza Chilena 2 ' ,55)">Escolher como Meia Pizza</button>
+      </div>
+        </div>
         </div>
         </div>
     </section>
@@ -452,6 +549,10 @@
             <div class="pizza-cubana">
                 <h3>Pizza Grande - R$ 55,00</h3>
                 <button onclick="AdicionarAoCarrinho('Pizza Grande Cubana', 55)" class="grande">Adicionar ao Carrinho</button>
+            <div class="meia-pizza">
+        <h3>Meia Pizza - R$55,00</h3>
+        <button onclick="AdicionarMeiaPizza('Pizza Cubana ' ,55)">Escolher como Meia Pizza</button>
+      </div>
             </div>
         </div>
         </div>
@@ -468,7 +569,11 @@
             <div class="pizza-dinapoli">
                 <h3>Pizza Grande - R$ 60,00</h3>
                 <button onclick="AdicionarAoCarrinho('Pizza Grande Dinapoli', 60)" class="grande">Adicionar ao Carrinho</button>
-            </div>
+            <div class="meia-pizza">
+        <h3>Meia Pizza - R$60,00</h3>
+        <button onclick="AdicionarMeiaPizza('Pizza Dinapoli ',60)">Escolher como Meia Pizza</button>
+      </div>
+        </div>
         </div>
         </div>
     </section>
@@ -484,7 +589,11 @@
             <div class="pizza-francesinha">
                 <h3>Pizza Grande - R$ 60,00</h3>
                 <button onclick="AdicionarAoCarrinho('Pizza Grande Francesinha', 60)" class="grande">Adicionar ao Carrinho</button>
-            </div>
+            <div class="meia-pizza">
+        <h3>Meia Pizza - R$60,00</h3>
+        <button onclick="AdicionarMeiaPizza('Pizza Francesinha ' ,60)">Escolher como Meia Pizza</button>
+      </div>
+        </div>
         </div>
             
     </section>
@@ -498,9 +607,13 @@
             <h3>Broto - R$38,00</h3>
             <button onclick="AdicionarAoCarrinho('Pizza Broto Jardineira' , 38)" class="">Adicionar ao Carrinho</button>
             <div class="pizza-jardineira">
-                <h3>Pizza Grande - R$ 60,00</h3>
-                <button onclick="AdicionarAoCarrinho('Pizza Grande Jardineira', 60)" class="grande">Adicionar ao Carrinho</button>
-            </div>
+            <h3>Pizza Grande - R$ 60,00</h3>
+            <button onclick="AdicionarAoCarrinho('Pizza Grande Jardineira', 60)" class="grande">Adicionar ao Carrinho</button>
+            <div class="meia-pizza">
+        <h3>Meia Pizza - R$60,00</h3>
+        <button onclick="AdicionarMeiaPizza('Pizza Jardineira ',60)">Escolher como Meia Pizza</button>
+      </div>
+        </div>
         </div>
         </div>
     </section>
@@ -516,7 +629,11 @@
             <div class="pizza-nordestina">
                 <h3>Pizza Grande - R$ 55,00</h3>
                 <button onclick="AdicionarAoCarrinho('Pizza Grande Nordestina', 55)" class="grande">Adicionar ao Carrinho</button>
-            </div>
+            <div class="meia-pizza">
+        <h3>Meia Pizza - R$55,00</h3>
+        <button onclick="AdicionarMeiaPizza('Pizza Nordestina ',55)">Escolher como Meia Pizza</button>
+      </div>
+        </div>
         </div>
         </div>
     </section>
@@ -532,6 +649,10 @@
             <div class="pizza-paulista">
                 <h3>Pizza Grande - R$ 60,00</h3>
                 <button onclick="AdicionarAoCarrinho('Pizza Grande Paulista', 60)" class="grande">Adicionar ao Carrinho</button>
+            <div class="meia-pizza">
+        <h3>Meia Pizza - R$60,00</h3>
+        <button onclick="AdicionarMeiaPizza('Pizza Paulista ',60)">Escolher como Meia Pizza</button>
+      </div>
             </div>
         </div>
         </div>
@@ -548,7 +669,11 @@
             <div class="pizza-peruana">
                 <h3>Pizza Grande - R$ 60,00</h3>
                 <button onclick="AdicionarAoCarrinho('Pizza Grande Peruana', 60)" class="grande">Adicionar ao Carrinho</button>
-            </div>
+            <div class="meia-pizza">
+        <h3>Meia Pizza - R$60,00</h3>
+        <button onclick="AdicionarMeiaPizza('Pizza Peruana ',60)">Escolher como Meia Pizza</button>
+      </div>
+        </div>
         </div>
         </div>
     </section>
@@ -564,7 +689,11 @@
             <div class="pizza-portuguesa">
                 <h3>Pizza Grande - R$ 55,00</h3>
                 <button onclick="AdicionarAoCarrinho('Pizza Grande Portugesa', 55)" class="grande">Adicionar ao Carrinho</button>
-            </div>
+            <div class="meia-pizza">
+        <h3>Meia Pizza - R$55,00</h3>
+        <button onclick="AdicionarMeiaPizza('Pizza Portugesa ',55)">Escolher como Meia Pizza</button>
+      </div>
+        </div>
         </div>
         </div>                
     </section>
@@ -580,7 +709,11 @@
             <div class="pizza-salame">
                 <h3>Pizza Grande - R$ 60,00</h3>
                 <button onclick="AdicionarAoCarrinho('Pizza Grande Salame', 60)" class="grande">Adicionar ao Carrinho</button>
-            </div>
+            <div class="meia-pizza">
+        <h3>Meia Pizza - R$60,00</h3>
+        <button onclick="AdicionarMeiaPizza('Pizza Salame ',60)">Escolher como Meia Pizza</button>
+      </div>
+        </div>
         </div>
         </div>
     </section>
@@ -596,7 +729,11 @@
             <div class="pizza-universo">
                 <h3>Pizza Grande - R$ 55,00</h3>
                 <button onclick="AdicionarAoCarrinho('Pizza Grande Universo',55 )" class="grande">Adicionar ao Carrinho</button>
-            </div>
+            <div class="meia-pizza">
+        <h3>Meia Pizza - R$55,00</h3>
+        <button onclick="AdicionarMeiaPizza('Pizza Universo ',55)">Escolher como Meia Pizza</button>
+      </div>
+        </div>
         </div>
         </div>
     </section>
@@ -612,7 +749,11 @@
             <div class="pizza-paulista">
                 <h3>Pizza Grande - R$ 60,00</h3>
                 <button onclick="AdicionarAoCarrinho('Pizza Grande Quatro Queijos', 60)" class="grande">Adicionar ao Carrinho</button>
-            </div>
+            <div class="meia-pizza">
+        <h3>Meia Pizza - R$60,00</h3>
+        <button onclick="AdicionarMeiaPizza('Pizza Quatro Queijos ',60)">Escolher como Meia Pizza</button>
+      </div>
+        </div>
         </div>
         </div>
     </section>
@@ -628,6 +769,10 @@
             <div class="pizza-3-queijos">
                 <h3>Pizza Grande - R$ 55,00</h3>
                 <button onclick="AdicionarAoCarrinho('Pizza Grande Tres Queijos', 55)" class="grande">Adicionar ao Carrinho</button>
+            <div class="meia-pizza">
+        <h3>Meia Pizza - R$55,00</h3>
+        <button onclick="AdicionarMeiaPizza('Pizza Tres Queijos',55)">Escolher como Meia Pizza</button>
+      </div>Queijos
             </div>
         </div>
         </div>
@@ -644,9 +789,14 @@
             <div class="pizza-carne-seca">
                 <h3>Pizza Grande - R$ 55,00</h3>
                 <button onclick="AdicionarAoCarrinho('Pizza Grande Carne Seca', 55)" class="grande">Adicionar ao Carrinho</button>
+            <div class="meia-pizza">
+        <h3>Meia Pizza - R$55,00</h3>
+        <button onclick="AdicionarMeiaPizza('Pizza Carne Seca ',55)">Escolher como Meia Pizza</button>
+      </div>
             </div>
         </div>
         </div>
+
     </section>
 
     <section id="Pizzas-doces">
@@ -660,7 +810,11 @@
             <div class="pizza-brigadeiro">
                 <h3>Pizza Grande - R$ 50,00</h3>
                 <button onclick="AdicionarAoCarrinho('Pizza Grande Brigadeiro', 50)" class="grande">Adicionar ao Carrinho</button>
-            </div>
+            <div class="meia-pizza">
+        <h3>Meia Pizza - R$50,00</h3>
+        <button onclick="AdicionarMeiaPizza('Pizza Brigadeiro',50)">Escolher como Meia Pizza</button>
+      </div>
+        </div>
         </div>
         </div>
     </section>
@@ -676,7 +830,11 @@
             <div class="pizza-chocolate">
                 <h3> Grande - R$ 50,00</h2>
                 <button onclick="AdicionarAoCarrinho('Pizza Grande Chocolate', 50)" class="grande">Adicionar ao Carrinho</button>
-            </div>
+            <div class="meia-pizza">
+        <h3>Meia Pizza - R$50,00</h3>
+        <button onclick="AdicionarMeiaPizza('Pizza de Chocolate',50)">Escolher como Meia Pizza</button>
+      </div>
+        </div>
         </div>
         </div>
     </section>
@@ -692,7 +850,11 @@
             <div class="pizza-morango">
                 <h3>Pizza Grande - R$ 50,00</h3>
                 <button onclick="AdicionarAoCarrinho('Pizza Grande Morango', 50)" class="grande">Adicionar ao Carrinho</button>
-            </div>
+            <div class="meia-pizza">
+        <h3>Meia Pizza - R$50,00</h3>
+        <button onclick="AdicionarMeiaPizza('Pizza de Morango ',50)">Escolher como Meia Pizza</button>
+      </div>
+        </div>
         </div>
         </div>
     </section>
@@ -708,7 +870,11 @@
             <div class="pizza-M&MS">
                 <h3>Pizza Grande - R$ 50,00</h3>
                 <button onclick="AdicionarAoCarrinho('Pizza Grande M&MS', 60)" class="grande">Adicionar ao Carrinho</button>
-            </div>
+            <div class="meia-pizza">
+        <h3>Meia Pizza - R$50,00</h3>
+        <button onclick="AdicionarMeiaPizza('Pizza M&MS',50)">Escolher como Meia Pizza</button>
+      </div>
+        </div>
         </div>
         </div>
     </section>
@@ -724,12 +890,15 @@
             <div class="pizza-prestigio">
                 <h3>Pizza Grande - R$ 50,00</h3>
                 <button onclick="AdicionarAoCarrinho('Pizza Grande Prestigio', 50)" class="grande">Adicionar ao Carrinho</button>
-            </div>
+            <div class="meia-pizza">
+        <h3>Meia Pizza - R$50,00</h3>
+        <button onclick="AdicionarMeiaPizza('Pizza Prestigio',50)">Escolher como Meia Pizza</button>
+      </div>
+        </div>
         </div>
         </div>
     </section>
-
-    <section>
+<section>
         <h2>Pizza Romeu e Julieta</h2>
         <div class="pizza-container">
         <div class="pizza-card">
@@ -740,10 +909,129 @@
             <div class="pizza-romeu-e-julieta">
                 <h3>Pizza Grande - R$ 50,00</h3>
                 <button onclick="AdicionarAoCarrinho('Pizza Grande Romeu e Julieta', 50)" class="grande">Adicionar ao Carrinho</button>
-            </div>
-        </div>
-        </div>
-    </section>  
+            <div class="meia-pizza">
+        <h3>Meia Pizza - R$50,00</h3>
+        <button onclick="AdicionarMeiaPizza('Pizza Romeu e Julieta',50)">Escolher como Meia Pizza</button>
+      </div>
+    </div>
+  </div>
+      <div>        
+      </div>              
+        </section>
+    
+    <div>
+       <select id="sabor1">
+  <option value="">--Selecione--</option>
+  <option value="Alemã" data-preco="50">Alemã</option>
+    <option value="Alho" data-preco="43">Alho</option>
+    <option value="Americana" data-preco="50">Americana</option>
+    <option value="Atum" data-preco="47">Atum</option>
+    <option value="Baiana" data-preco="50">Baiana</option>
+    <option value="Bacon" data-preco="50">Bacon</option>
+    <option value="Bauru" data-preco="47">Bauru</option>
+    <option value="Brasileira" data-preco="47">Brasileira</option>
+    <option value="Brocolis" data-preco="47">Brocolis</option>
+    <option value="Caipira" data-preco="43">Caipira</option>
+    <option value="Católes" data-preco="47">Católes</option>
+    <option value="Chilena" data-preco="47">Chilena</option>
+    <option value="Espanhola" data-preco="47">Espanhola</option>
+    <option value="Lombo" data-preco="47">Lombo</option>
+    <option value="Marguerita" data-preco="47">Marguerita</option>
+    <option value="Mexicana" data-preco="47">Mexicana</option>
+    <option value="Milho Verde" data-preco="43">Milho Verde</option>
+    <option value="Mussarela" data-preco="43">Mussarela</option>
+    <option value="Calabresa" data-preco="45">Calabresa</option>
+    <option value="Palmito" data-preco="47">Palmito</option>
+    <option value="2 Queijos" data-preco="45">2 Queijos</option>
+    <option value="Toscana" data-preco="43">Toscana</option>
+    <option value="Carijó" data-preco="55">Carijó</option>
+    <option value="Chilena 2" data-preco="55">Chilena 2</option>
+    <option value="Cubana" data-preco="55">Cubana</option>
+    <option value="Dinapoli" data-preco="60">Dinapoli</option>
+    <option value="Francesinha" data-preco="60">Francesinha</option>
+    <option value="Jardineira" data-preco="60">Jardineira</option>
+    <option value="Nordestina" data-preco="55">Nordestina</option>
+    <option value="Paulista" data-preco="60">Paulista</option>
+    <option value="Peruana" data-preco="60">Peruana</option>
+    <option value="Portuguesa" data-preco="55">Portuguesa</option>
+    <option value="Salame" data-preco="60">Salame</option>
+    <option value="Universo" data-preco="55">Universo</option>
+    <option value="4 Queijos" data-preco="60">4 Queijos</option>
+    <option value="3 Queijos" data-preco="55">3 Queijos</option>
+    <option value="Carne Seca" data-preco="55">Carne Seca</option>    
+    <option value="Brigadeiro" data-preco="50">Brigadeiro</option>
+    <option value="Chocolate" data-preco="50">Chocolate</option>
+    <option value="Morango" data-preco="50">Morango</option>
+    <option value="M&MS" data-preco="50">M&MS</option>
+    <option value="Prestigio" data-preco="50">Prestigio</option>
+    <option value="Romeu e Julieta" data-preco="50">Romeu e Julieta</option>    
+</select>
+
+<select id="sabor2">
+  <option value="">--Selecione--</option>
+   <option value="Alemã" data-preco="50">Alemã</option>
+    <option value="Alho" data-preco="43">Alho</option>
+    <option value="Americana" data-preco="50">Americana</option>
+    <option value="Atum" data-preco="47">Atum</option>
+    <option value="Baiana" data-preco="50">Baiana</option>
+    <option value="Bacon" data-preco="50">Bacon</option>
+    <option value="Bauru" data-preco="47">Bauru</option>
+    <option value="Brasileira" data-preco="47">Brasileira</option>
+    <option value="Brocolis" data-preco="47">Brocolis</option>
+    <option value="Caipira" data-preco="43">Caipira</option>
+    <option value="Católes" data-preco="47">Católes</option>
+    <option value="Chilena" data-preco="47">Chilena</option>
+    <option value="Espanhola" data-preco="47">Espanhola</option>
+    <option value="Lombo" data-preco="47">Lombo</option>
+    <option value="Marguerita" data-preco="47">Marguerita</option>
+    <option value="Mexicana" data-preco="47">Mexicana</option>
+    <option value="Milho Verde" data-preco="43">Milho Verde</option>
+    <option value="Mussarela" data-preco="43">Mussarela</option>
+    <option value="Calabresa" data-preco="45">Calabresa</option>
+    <option value="Palmito" data-preco="47">Palmito</option>
+    <option value="2 Queijos" data-preco="45">2 Queijos</option>
+    <option value="Toscana" data-preco="43">Toscana</option>
+    <option value="Carijó" data-preco="55">Carijó</option>
+    <option value="Chilena 2" data-preco="55">Chilena 2</option>
+    <option value="Cubana" data-preco="55">Cubana</option>
+    <option value="Dinapoli" data-preco="60">Dinapoli</option>
+    <option value="Francesinha" data-preco="60">Francesinha</option>
+    <option value="Jardineira" data-preco="60">Jardineira</option>
+    <option value="Nordestina" data-preco="55">Nordestina</option>
+    <option value="Paulista" data-preco="60">Paulista</option>
+    <option value="Peruana" data-preco="60">Peruana</option>
+    <option value="Portuguesa" data-preco="55">Portuguesa</option>
+    <option value="Salame" data-preco="60">Salame</option>
+    <option value="Universo" data-preco="55">Universo</option>
+    <option value="4 Queijos" data-preco="60">4 Queijos</option>
+    <option value="3 Queijos" data-preco="55">3 Queijos</option>
+    <option value="Carne Seca" data-preco="55">Carne Seca</option>    
+    <option value="Brigadeiro" data-preco="50">Brigadeiro</option>
+    <option value="Chocolate" data-preco="50">Chocolate</option>
+    <option value="Morango" data-preco="50">Morango</option>
+    <option value="M&MS" data-preco="50">M&MS</option>
+    <option value="Prestigio" data-preco="50">Prestigio</option>
+    <option value="Romeu e Julieta" data-preco="50">Romeu e Julieta</option>
+
+</select>
+
+<button onclick="AdicionarMeiaPizza()">Escolher como Meia Pizza</button>
+<p id="resultado"></p>
+
+<ul id="lista-carrinho"></ul>
+<p id="total">Total: R$ 0,00</p>
+
+<input type="text" id="nomeCliente" placeholder="Seu nome">
+<input type="text" id="enderecoCliente" placeholder="Endereço">
+<select id="pagamentoCliente">
+  <option value="">--Forma de pagamento--</option>
+  <option value="Dinheiro">Dinheiro</option>
+  <option value="Cartão">Cartão</option>
+  <option value="Pix">Pix</option>
+</select>
+<button onclick="finalizarCompra()">Finalizar Compra</button>
+    </div> 
+
 
 
     <section id="Esfihas">
@@ -799,6 +1087,41 @@
             <button onclick="AdicionarAoCarrinho('Esfiha Calabresa' , 2)" class="esfiha-calabresa">Adicionar ao Carrinho</button>
             </div>
         </div>
+    </section>
+
+    <section>
+        <h2>Esfiha Calabresa com Catupiry</h2>
+        <div class="esfiha-container">
+        <div class="esfiha-card">
+            <img src="./img/Esfiha Calabresa com Catupiry.jpeg " alt="Esfiha Calabresa com Catupiry" class="esfiha-calabresa-catupiry">
+            <h3>R$3.50</h3>
+            <button onclick="AdicionarAoCarrinho('Esfiha Calabresa com Catupiry' , 3.50)" class="esfiha-calabresa-catupiry">Adicionar ao Carrinho</button>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Esfiha Calabresa com Cheddar</h2>
+        <div class="esfiha-container">
+        <div class="esfiha-card">
+            <img src="./img/Esfiha Calabresa com Cheddar.jpeg" alt="Esfiha Calabresa com Cheddar" class="esfiha-calabresa-cheddar">
+            <h3>R$3,50</h3>
+            <button onclick="AdicionarAoCarrinho('Esfiha Calabresa com Cheddar' ,3.50 )" class="esfiha-calabresa-cheddar">Adicionar ao Carrinho</button>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Esfiha Escarola</h2>
+        <div class="esfiha-container">
+        <div class="esfiha-card">
+            <img src="./img/Esfiha Escarola.jpg" alt="Esfiha Escarola" class="esfiha-escarola">
+            <h3>R$3,50</h3>
+            <button onclick="AdicionarAoCarrinho('Esfiha Escarola' ,3.50 )" class="esfiha-escarola">Adicionar ao Carrinho</button>
+            </div>
+        </div>
+
+        
     </section>
 
     <section id="bordas">
