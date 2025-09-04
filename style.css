@@ -64,6 +64,7 @@ nav .menu {
 
 .menu li {
     position: relative;
+    margin: 0 10px;
 }
 
 .menu a {
@@ -201,3 +202,28 @@ footer {
     text-align: center;
     padding: 10px;
 }
+
+@media screen and (max-width: 768px) {
+    .pizza-container,
+    .esfiha-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        padding: 10px;
+        width: 100%;
+    }
+
+    .pizza-container > div,
+    .esfiha-container > div {
+        width: 90%; 
+        max-width: 400px;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
