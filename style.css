@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #219653;
+    height: 50px;
+    padding: 20px;
+    text-align: center;
+}
+
+header:hover {
+    background-color: #a52a2a;
+    transition: 0.5s;
+}
+
+body {
+    background: linear-gradient(to left, #228b22, #b22222);
+    padding: 30px;
+    line-height: 20px;
+
+}
+
+h1 {
+    color: #000000;
+    font-weight: bold;
+    text-align: left;
+    padding: 30px;
+}
+
+h2 {
+    color: #000000;
+    font-weight: bold;
+    text-align: left;
+    padding: 30px;
+
+}
+
+h3 {
+    color: #000000;
+    font-weight: bold;
+    text-align: left;
+    padding: 30px;
+}
+
+
+p {
+    color: white;
+    font-size: 24px;
+}
+
+
+
+nav .menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    background-color: #8b0000;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    position: relative;
+    margin: 0 10px;
+}
+
+.menu a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    background-color: #a52a2a;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #a52a2a;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown:hover .submenu {
+    display: block;
+}
+
+
+main {
+    padding: 20px;
+}
+
+#horario {
+    background: linear-gradient(to left, #228b22, #b22222);
+    padding: 20px;
+    color: white;
+    text-align: left;
+}
+
+ul {
+    list-style-type: none;
+    line-height: 20px;
+    margin: 10px;
+}
+
+.pizza-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.pizza-card {
+    border: 1px solid #f0f0f0;
+    padding: 10px;
+    margin: 10px;
+    width: 200px;
+    text-align: center;
+    background-color: #8b0000;
+}
+
+
+
+.pizza-card img {
+    width: 100%;
+    height: auto;
+}
+
+#esfiha {
+    background: linear-gradient(to left, #228b22, #b22222);
+    padding: 20px;
+    color: white;
+    text-align: left;
+}
+
+.esfiha-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+
+.esfiha-card img {
+    width: 100%;
+    height: auto;
+}
+
+#combos {
+    background: linear-gradient(to left, #228b22, #b22222);
+    padding: 20px;
+    color: white;
+    text-align: left;
+}
+
+.link-whatsapp-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: #f0f0f0; 
+     line-height: 20px;
+}
+
+.link-whatsapp {
+    width: 24px;
+    height: 24px;
+   }
+
+
+.link-whatsapp-container:hover {
+    opacity: 0.8;
+}
+button {
+    background-color: #228b22;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+button:hover {
+    background-color: #a52a2a;
+
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+footer {
+    background-color: #b22222;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .pizza-container,
+    .esfiha-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        padding: 10px;
+        width: 100%;
+    }
+
+    .pizza-container > div,
+    .esfiha-container > div {
+        width: 90%; 
+        max-width: 400px;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
